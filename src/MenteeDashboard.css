@@ -1,0 +1,155 @@
+.mentee-dashboard {
+  min-height: 100vh;
+  background: #f5f7fc;
+  color: #17233f;
+}
+
+.mentee-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 7%;
+  background: #fff;
+  border-bottom: 1px solid #e5eaf3;
+}
+
+.mentee-header button,
+.mentee-booking-list > button {
+  padding: 10px 18px;
+  border: 0;
+  border-radius: 8px;
+  background: #1e3a8a;
+  color: #fff;
+  cursor: pointer;
+}
+
+.mentee-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+.mentee-content h1 {
+  margin: 8px 0;
+  font-size: 36px;
+}
+
+.mentee-empty,
+.mentee-booking-card {
+  margin-top: 24px;
+  padding: 24px;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  background: #fff;
+}
+
+.mentee-empty .primary-button {
+  display: inline-block;
+  margin-top: 12px;
+  text-decoration: none;
+}
+
+.mentee-booking-list {
+  display: grid;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.mentee-booking-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 0;
+}
+
+.mentee-booking-card h2 {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+.mentee-booking-card p {
+  margin: 6px 0;
+  color: #64748b;
+  overflow-wrap: anywhere;
+}
+
+.booking-status {
+  display: inline-block;
+  padding: 7px 12px;
+  border-radius: 20px;
+  background: #e2e8f0;
+  color: #334155;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.status-accepted {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status-declined,
+.status-cancelled {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.status-pending {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.mentee-back-link {
+  display: inline-block;
+  margin-top: 28px;
+  color: #1e40af;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .mentee-content {
+    padding: 32px 16px;
+  }
+
+  .mentee-content h1 {
+    font-size: 29px;
+  }
+
+  .mentee-booking-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+.booking-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.booking-stat {
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.booking-stat h3 {
+  margin: 0 0 12px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.booking-stat p {
+  margin: 0;
+  color: #1e3a8a;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+@media (max-width: 650px) {
+  .booking-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
